@@ -5,9 +5,13 @@
     "outFile": ".tmp/serve/app/index.module.js",
 
     "moduleResolution": "node",
-    "types": ["jasmine", "node"]
+    "types": ["jasmine", "node", "protractor"],
+    "typeRoots": [
+        "node_modules/@types"
+    ]
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "node_modules/protractor/node_modules"
   ]
 }
