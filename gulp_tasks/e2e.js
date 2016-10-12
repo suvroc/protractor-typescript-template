@@ -17,8 +17,7 @@ var tsProject = ts.createProject('./tsconfig.json');
 gulp.task('compile', function() {
     tsProject.src([conf.paths.typings, path.join(conf.paths.e2e, '/**/*.ts')])
         .pipe(ts({
-            out: 'output.js',
-            typings: conf.typings
+            out: 'output.js'
         }))
         .pipe(gulp.dest(conf.paths.e2eOutput));
 })
