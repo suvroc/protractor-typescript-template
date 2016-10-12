@@ -1,0 +1,29 @@
+{
+  "name": "protractor-typescript-template",
+  "version": "1.0.0",
+  "description": "Template project for Protractor end-to-end tests with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp protractor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suvroc/protractor-typescript-template.git"
+  },
+  "author": "suvroc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suvroc/protractor-typescript-template/issues"
+  },
+  "homepage": "https://github.com/suvroc/protractor-typescript-template#readme",
+  "keywords": [
+    "protractor"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.17.3",
+    "gulp": "^3.9.1",
+    "gulp-protractor": "^3.0.0",
+    "gulp-typescript": "^3.0.2",
+    "typescript": "^2.0.3"
+  }
+}

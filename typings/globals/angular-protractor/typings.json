@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/36d40a63a05b5cb3413737fbdf7c9a2a26f211fd/angular-protractor/angular-protractor.d.ts",
+    "raw": "registry:dt/angular-protractor#1.5.0+20160914235635",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/36d40a63a05b5cb3413737fbdf7c9a2a26f211fd/angular-protractor/angular-protractor.d.ts"
+  }
+}
