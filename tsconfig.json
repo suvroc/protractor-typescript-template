@@ -1,18 +1,19 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "outDir": ".tmp/",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "declaration": false,
-    "noImplicitAny": false,
-    "types": [
-      "node", "jasmine"
+    "compileOnSave": false,
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "outDir": ".tmp/",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "skipLibCheck": true,
+        "types": [
+            "node", "jasmine"
+        ]
+    },
+    "exclude": [
+        "node_modules"
     ]
-  },
-  "exclude": [
-    "node_modules"
-  ]
 }
