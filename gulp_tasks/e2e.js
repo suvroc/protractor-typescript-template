@@ -15,10 +15,11 @@ gulp.task('webdriver-update', protractor.webdriver_update);
 var tsProject = ts.createProject('./tsconfig.json');
 
 gulp.task('compile', function() {
-    tsProject.src([conf.paths.typings, path.join(conf.paths.e2e, '/**/*.ts')])
-        .pipe(ts({
-            out: 'output.js'
-        }))
+    gulp.src([conf.paths.typings, path.join(conf.paths.e2e, '/**/*.ts')])
+        // .pipe(ts({
+        //     out: 'output.js'
+        // }))
+        .pipe(tsProject())
         .pipe(gulp.dest(conf.paths.e2eOutput));
 })
 
@@ -29,9 +30,7 @@ function runProtractor(done) {
     var args = params.length > 3 ? [params[3], params[4]] : [];
 
     gulp.src([conf.paths.typings, path.join(conf.paths.e2e, '/**/*.ts')])
-        .pipe(ts({
-            out: 'output.js'
-        }))
+        .pipe(tsProject())
         .pipe(gulp.dest(conf.paths.e2eOutput)) //protractor needs files on disk, cannot get them from stream
         .pipe(protractor.protractor({
             configFile: 'protractor.conf.js',

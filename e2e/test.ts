@@ -1,3 +1,6 @@
+
+import { browser, element, by, $, $$, protractor, ElementFinder, ElementArrayFinder } from 'protractor';
+
 describe('angularjs homepage todo list', function() {
   it('should add a todo', function() {
     browser.get('https://angularjs.org');

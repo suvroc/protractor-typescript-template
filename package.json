@@ -24,7 +24,11 @@
     "gulp": "^3.9.1",
     "gulp-protractor": "^3.0.0",
     "gulp-typescript": "^3.0.2",
-    "typescript": "^2.0.3",
-    "@types/selenium-webdriver": "2.44.*"
+    "@types/jasmine": "^2.5.35",
+    "@types/lodash": "^4.14.37",
+    "jasmine": "^2.8.0",
+    "protractor": "^5.1.2",
+    "typescript": "^2.5.3",
+    "yargs": "^6.3.0"
   }
 }

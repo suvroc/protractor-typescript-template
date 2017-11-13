@@ -2,16 +2,17 @@
   "compileOnSave": false,
   "compilerOptions": {
     "target": "es5",
-    "outFile": ".tmp/serve/app/index.module.js",
-
+    "module": "commonjs",
+    "outDir": ".tmp/",
     "moduleResolution": "node",
-    "types": ["jasmine", "node", "protractor"],
-    "typeRoots": [
-        "node_modules/@types"
+    "sourceMap": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "types": [
+      "node", "jasmine"
     ]
   },
   "exclude": [
-    "node_modules",
-    "node_modules/protractor/node_modules"
+    "node_modules"
   ]
 }
